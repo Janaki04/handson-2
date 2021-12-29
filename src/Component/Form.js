@@ -23,13 +23,13 @@ return (
     <h1 className='heading'>EMPLOYEE FEEDBACK FORM</h1>
     <form onSubmit={handleSubmit}>
       <label className='text1'>Name:
-      <input className='box1' type="text" name="name" value={inputs.name} onChange={handleChange}/>
+      <input required className='box1' type="text" name="name" value={inputs.name} onChange={handleChange}/>
       </label>
-      <label className='text2'> Department:
-        <input className='box1' type="text" name="department" value={inputs.department} onChange={handleChange}/>
+      <label  className='text2'> Department:
+        <input required className='box1' type="text" name="department" value={inputs.department} onChange={handleChange}/>
         </label>
         <label className='text3'>Rating:
-      <input className='box1' type="number" name="rating" value={inputs.rating} onChange={handleChange}/>
+      <input required className='box1' type="number" name="rating" value={inputs.rating} onChange={handleChange}/>
       </label>
         <input  className='box2' type="submit" />
     </form>
